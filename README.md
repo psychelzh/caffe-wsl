@@ -39,15 +39,18 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 ```
 
-配置好以上这些之后，在Ubuntu中执行以下命令：
+配置好以上这些之后，在Ubuntu中执行以下命令完成已有软件的升级（其中有些软件的安装中需要在交互界面中确认信息，需要用键盘方向键选择`Yes`后按`Enter`确认）：
 
 ```bash
 sudo apt update
-sudo apt dist-upgrade
-sudo apt install python3-pip
-sudo apt install caffe-cpu # 这一步将安装caffe
-sudo apt install firefox # jupyter lab会用到
-echo "export DISPLAY=:0.0" >> .bashrc
+sudo apt --assume-yes dist-upgrade
+```
+
+完成升级后，执行以下命令完成`pip3`、`caffe-cpu`的安装，以及一部分必须的`python`模块的安装。
+
+```bash
+sudo apt --assume-yes install python3-pip caffe-cpu firefox # 这一步将安装caffe和firefox（jupyter lab会用到）
+echo "export DISPLAY=:0.0" >> .bashrc # 配置默认的图形界面端口（参见[准备图形界面服务]部分）
 sudo pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U # 升级pip3
 sudo pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple # 设置pip3镜像，加快速度
 sudo pip3 install jupyterlab tensorflow scikit-learn numpy pandas nltk keras # 可能还有一些包需要安装
