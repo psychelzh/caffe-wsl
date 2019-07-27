@@ -76,3 +76,17 @@ jupyter lab
 ```
 
 就大功告成了！:)
+
+## FAQ
+
+### 为什么使用`jupyter lab`后，没有成功弹出`firefox`浏览器？
+
+如果弹出的窗口如下：
+
+![弹出错误窗口](images/FAQ1.png)
+
+请在Ubuntu的终端中执行以下命令：
+
+```bash
+sudo chown -R $USER:$USER ~/.cache
+```
