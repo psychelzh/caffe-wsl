@@ -54,7 +54,7 @@ echo "export DISPLAY=:0.0" >> .bashrc # 配置默认的图形界面端口（参�
 sudo pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U # 升级pip3
 sudo pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple # 设置pip3镜像，加快速度
 sudo pip3 install jupyterlab tensorflow scikit-learn numpy pandas nltk keras # 可能还有一些包需要安装
-sudo pup3 install --upgrade scikit-image # 这一步更新为了校正一些错误。
+sudo pip3 install --upgrade scikit-image # 这一步更新为了校正一些错误。
 ```
 
 以上命令执行完之后，关闭Ubuntu，并重新打开Ubuntu即可完成安装。
