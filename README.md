@@ -6,6 +6,8 @@
 
 `WSL`即`Windows Subsystem Linux`，是Windows 10系统中的子系统，目前拥有较为全面的Linux功能，建议以后多多使用。以下主要讲一讲如何利用`WSL`使用`caffe`。
 
+## 在`WSL`中安装`caffe`
+
 ### 启用WSL功能
 
 请查看[此链接](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10)完成启用WSL功能。推荐使用Ubuntu系统。
