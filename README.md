@@ -81,7 +81,7 @@ jupyter lab
 
 ## FAQ
 
-### 为什么使用`jupyter lab`后，没有成功弹出`firefox`浏览器？
+### 执行`jupyter lab`后，没有成功弹出Firefox浏览器
 
 如果弹出的窗口如下：
 
