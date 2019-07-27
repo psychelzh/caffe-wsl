@@ -65,7 +65,7 @@ sudo pip3 install --upgrade scikit-image # 这一步更新为了校正一些错�
 
 这一步是为了`jupyter lab`可以正常打开`firefox`浏览器。推荐安装`Xming`作为该服务软件，下载地址如下：
 
-https://sourceforge.net/projects/xming/files/latest/download
+<https://sourceforge.net/projects/xming/files/latest/download>
 
 下载完成并安装后，打开`Xming`即可，不会弹出任何窗口。
 
