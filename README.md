@@ -92,3 +92,9 @@ jupyter lab
 ```bash
 sudo chown -R $USER:$USER ~/.cache
 ```
+
+## 如果因为scikit-image 版本遇到 "as_gray" error，可以修改scikit-image版本号
+sudo pip install scikit-image==0.15.0
+
+
+
